@@ -35,16 +35,9 @@ var init = function (window) {
         // TODO 3 : Call the drawCircle function 5 times //
 
         // TODO 7 : Create a Loop to call drawCircle 100 times
-        var counter = 0; 
-        while (counter < 10) {
-            // do something
-            counter++
-            }
-
-        for (var counter = 0; counter < 101; counter++) {
-         // do something
-         drawCircle()
-            }
+for (var d = 0; d <= 300; d++) {
+         drawCircle(d);
+     }
     
         view.addChild(fps);
         app.addUpdateable(fps);
@@ -91,7 +84,12 @@ var init = function (window) {
            runner.checkCircleBounds(circles[4]);
 
             // TODO 8 : Iterate over the array
-            
+            for (var p = 0; p <= 300; p++) {
+         physikz.updatePosition(circles[p]);
+     }
+     for (var r = 0; r <= 300; r++) {
+         runner.checkCircleBounds(circles[r]);
+     }
            
 
         }
